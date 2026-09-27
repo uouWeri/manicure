@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ЛАК — студия маникюра</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap topbar__inner">
+    <span class="logo">ЛАК</span>
+    <nav class="nav">
+      <a href="#services">Услуги</a>
+      <a href="#gallery">Работы</a>
+      <a href="#booking">Запись</a>
+    </nav>
+    <a href="#booking" class="btn btn--small">Записаться</a>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero">
+    <div class="wrap hero__inner">
+      <div class="hero__text">
+        <p class="hero__kicker">Студия маникюра в центре города</p>
+        <h1 class="hero__title">Руки —<br>это тоже<br>высказывание.</h1>
+        <p class="hero__lead">Аккуратный маникюр, стойкое покрытие и забота о ногтях. Без спешки и без очередей — только по записи.</p>
+        <div class="hero__cta">
+          <a href="#booking" class="btn">Записаться на приём</a>
+          <a href="#services" class="link-arrow">Посмотреть цены</a>
+        </div>
+      </div>
+      <div class="hero__swatches" aria-hidden="true">
+        <svg viewBox="0 0 420 420" class="swatch-art">
+          <circle cx="300" cy="90" r="58" class="sw sw--berry"/>
+          <circle cx="150" cy="60" r="34" class="sw sw--sage"/>
+          <circle cx="360" cy="230" r="30" class="sw sw--rose"/>
+          <circle cx="90" cy="220" r="70" class="sw sw--ink"/>
+          <circle cx="230" cy="330" r="46" class="sw sw--berry-light"/>
+          <path class="brush" d="M40 380 C 120 340, 180 400, 260 360 S 380 320, 400 300" />
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <section class="services" id="services">
+    <div class="wrap">
+      <h2 class="section-title">Меню услуг</h2>
+      <ul class="menu-list">
+        <li class="menu-item"><span>Классический маникюр</span><span class="dots"></span><span class="price">1 800 ₽</span></li>
+        <li class="menu-item"><span>Аппаратный маникюр</span><span class="dots"></span><span class="price">2 200 ₽</span></li>
+        <li class="menu-item"><span>Покрытие гель-лаком</span><span class="dots"></span><span class="price">2 500 ₽</span></li>
+        <li class="menu-item"><span>Снятие покрытия</span><span class="dots"></span><span class="price">500 ₽</span></li>
+        <li class="menu-item"><span>Дизайн — 1 ноготь</span><span class="dots"></span><span class="price">от 150 ₽</span></li>
+        <li class="menu-item"><span>Укрепление гелем</span><span class="dots"></span><span class="price">3 200 ₽</span></li>
+        <li class="menu-item"><span>Мужской маникюр</span><span class="dots"></span><span class="price">1 900 ₽</span></li>
+        <li class="menu-item"><span>Спа-уход для рук</span><span class="dots"></span><span class="price">1 200 ₽</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="gallery" id="gallery">
+    <div class="wrap">
+      <h2 class="section-title">Оттенки, которые мы любим</h2>
+      <p class="section-lead">Небольшая часть палитры, которая всегда есть в студии.</p>
+      <div class="scatter">
+        <span class="dot" style="--c:#B21942; --s:64px; --x:2%; --y:10%;"></span>
+        <span class="dot" style="--c:#E7B8B0; --s:48px; --x:20%; --y:55%;"></span>
+        <span class="dot" style="--c:#A8B79A; --s:56px; --x:38%; --y:5%;"></span>
+        <span class="dot" style="--c:#2A1E22; --s:40px; --x:52%; --y:60%;"></span>
+        <span class="dot" style="--c:#D98A9B; --s:72px; --x:65%; --y:20%;"></span>
+        <span class="dot" style="--c:#7C8F70; --s:44px; --x:82%; --y:50%;"></span>
+        <span class="dot" style="--c:#8A7368; --s:52px; --x:92%; --y:12%;"></span>
+        <span class="dot" style="--c:#C4536A; --s:36px; --x:10%; --y:75%;"></span>
+      </div>
+    </div>
+  </section>
+
+  <section class="quote">
+    <div class="wrap">
+      <p class="quote__text">«Прихожу сюда уже два года — единственное место, где покрытие держится по три недели без сколов».</p>
+      <p class="quote__author">— Марина, клиентка студии</p>
+    </div>
+  </section>
+
+  <section class="booking" id="booking">
+    <div class="wrap booking__inner">
+      <div class="booking__intro">
+        <h2 class="section-title">Записаться на приём</h2>
+        <p class="section-lead">Оставьте контакты — мы свяжемся и подберём удобное время в течение дня.</p>
+        <p class="booking__hours">Работаем ежедневно с 10:00 до 21:00<br>ул. Садовая, 14</p>
+      </div>
+      <form class="form" id="bookingForm">
+        <label class="field">
+          <span>Имя</span>
+          <input type="text" name="name" required placeholder="Как к вам обращаться">
+        </label>
+        <label class="field">
+          <span>Телефон</span>
+          <input type="tel" name="phone" required placeholder="+7 900 000-00-00">
+        </label>
+        <label class="field">
+          <span>Услуга</span>
+          <select name="service">
+            <option>Классический маникюр</option>
+            <option>Аппаратный маникюр</option>
+            <option>Покрытие гель-лаком</option>
+            <option>Укрепление гелем</option>
+            <option>Спа-уход для рук</option>
+          </select>
+        </label>
+        <label class="field">
+          <span>Желаемая дата</span>
+          <input type="date" name="date">
+        </label>
+        <button type="submit" class="btn btn--full">Отправить заявку</button>
+        <p class="form__note" id="formNote" role="status"></p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap footer__inner">
+    <span class="logo logo--footer">ЛАК</span>
+    <p>ул. Садовая, 14 · +7 900 123-45-67 · ежедневно 10:00–21:00</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
